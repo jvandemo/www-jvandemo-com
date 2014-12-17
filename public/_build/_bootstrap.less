@@ -1,0 +1,65 @@
+//
+// STEP 1:
+// update @bs3-less-directory with the location
+// of your Bootstrap 3 less directory
+//
+// STEP 2:
+// Comment out all Bootstrap 3 components that you don't need
+
+// Specify your Bootstrap 3 less directory here
+@bs3-less-directory: "../../bower_components/bootstrap/less";
+
+// Import custom variables
+@import "_variables.less";
+
+// Comment out all Bootstrap 3 components below that you don't need
+
+// Mixins
+@import "@{bs3-less-directory}/mixins.less";
+
+// Reset and dependencies
+@import "@{bs3-less-directory}/normalize.less";
+//@import "@{bs3-less-directory}/print.less";
+//@import "@{bs3-less-directory}/glyphicons.less";
+
+// Core CSS
+@import "@{bs3-less-directory}/scaffolding.less";
+//@import "@{bs3-less-directory}/type.less";
+@import "@{bs3-less-directory}/code.less";
+@import "@{bs3-less-directory}/grid.less";
+//@import "@{bs3-less-directory}/tables.less";
+@import "@{bs3-less-directory}/forms.less";
+//@import "@{bs3-less-directory}/buttons.less";
+
+// Components
+//@import "@{bs3-less-directory}/component-animations.less";
+//@import "@{bs3-less-directory}/dropdowns.less";
+//@import "@{bs3-less-directory}/button-groups.less";
+//@import "@{bs3-less-directory}/input-groups.less";
+//@import "@{bs3-less-directory}/navs.less";
+//@import "@{bs3-less-directory}/navbar.less";
+//@import "@{bs3-less-directory}/breadcrumbs.less";
+//@import "@{bs3-less-directory}/pagination.less";
+//@import "@{bs3-less-directory}/pager.less";
+//@import "@{bs3-less-directory}/labels.less";
+//@import "@{bs3-less-directory}/badges.less";
+//@import "@{bs3-less-directory}/jumbotron.less";
+//@import "@{bs3-less-directory}/thumbnails.less";
+//@import "@{bs3-less-directory}/alerts.less";
+//@import "@{bs3-less-directory}/progress-bars.less";
+//@import "@{bs3-less-directory}/media.less";
+//@import "@{bs3-less-directory}/list-group.less";
+//@import "@{bs3-less-directory}/panels.less";
+//@import "@{bs3-less-directory}/responsive-embed.less";
+//@import "@{bs3-less-directory}/wells.less";
+//@import "@{bs3-less-directory}/close.less";
+
+// Components w/ JavaScript
+//@import "@{bs3-less-directory}/modals.less";
+//@import "@{bs3-less-directory}/tooltip.less";
+//@import "@{bs3-less-directory}/popovers.less";
+//@import "@{bs3-less-directory}/carousel.less";
+
+// Utility classes
+@import "@{bs3-less-directory}/utilities.less";
+@import "@{bs3-less-directory}/responsive-utilities.less";

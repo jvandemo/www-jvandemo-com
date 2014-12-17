@@ -1,0 +1,33 @@
+@import "../../../_build/_variables";
+
+header.site-header{
+  background: @jvandemo-dark-blue;
+  padding: 1rem 0;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      margin-left: 2rem;
+      a{
+        text-transform: uppercase;
+        border-bottom: none;
+        letter-spacing: 0.5px;
+        color: #788D9E;
+        font-size: .75rem;
+        font-weight: 400;
+        &:hover{
+          color: #eff1f3;
+        }
+      }
+      &.active{
+        a{
+          color: #ffffff;
+        }
+      }
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}

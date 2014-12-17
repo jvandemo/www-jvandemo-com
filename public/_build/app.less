@@ -1,0 +1,21 @@
+@import "_variables";
+@import "_bootstrap";
+
+html{
+  font-size: 18px;
+}
+
+body{
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-weight: 300;
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+  border-bottom: 1px solid @link-color;
+  &:hover, &:active, &:visited, &:focus{
+    text-decoration: none;
+  }
+}

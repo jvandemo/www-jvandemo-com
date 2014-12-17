@@ -1,0 +1,6 @@
+{
+  "name": "www-jvandemo-com",
+  "root": "dist",
+  "clean_urls": false,
+  "error_page": "index.html"
+}

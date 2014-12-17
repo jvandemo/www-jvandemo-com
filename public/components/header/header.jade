@@ -1,0 +1,7 @@
+header.site-header
+    .container
+        ul
+            li(ng-class="{active: $state.includes('homepage')}")
+                a(ui-sref="homepage") Homepage
+            li(ng-class="{active: $state.includes('articles')}")
+                a(ui-sref="articles.article({slug: 'one'})") Article one
