@@ -78,7 +78,7 @@
 //** Global textual link color.
 @link-color:            @brand-primary;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      @link-color;
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -93,7 +93,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          20px;
+@font-size-base:          18px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -893,7 +893,7 @@
 //** Blockquote font size
 @blockquote-font-size:        (@font-size-base * 1);
 //** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     #E4EBF2;
 //** Page header border color
 @page-header-border-color:    @gray-lighter;
 //** Width of horizontal description list titles
