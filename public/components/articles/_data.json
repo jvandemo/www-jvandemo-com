@@ -1,0 +1,16 @@
+{
+  "top-5-benefits-after-6-months-of-component-driven-angularjs-development": {
+    "title": "Top 5 benefits after 6 months of component driven AngularJS development",
+    "intro": "In February 2014 Google announced that they had published some new \"Best Practice Recommendations for Angular App Structure\". For years I had been structuring AngularJS code in directories called controllers, services, directives, filters, etc as outlined by …",
+    "date": "2014-11-22",
+    "minutes": 8,
+    "tags": ["angular", "components", "code architecture"]
+  },
+  "the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives-part-2-transclusion": {
+    "title": "The nitty-gritty of compile and link functions inside AngularJS directives part 2: transclusion",
+    "intro": "In this article we investigate the influence of transclusion on the <code>compile</code>, <code>pre-link</code> and <code>post-link</code> functions inside an AngularJS directive.",
+    "date": "2014-11-17",
+    "minutes": 9,
+    "tags": ["angular", "directives"]
+  }
+}
