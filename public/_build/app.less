@@ -77,3 +77,42 @@ blockquote{
     margin-top: 0;
   }
 }
+
+hr{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  border-top: 1px solid #38404C;
+}
+
+.form-dark{
+  input[type="text"], input[type="email"]{
+    background: #323C4A;
+    border-radius: @input-border-radius;
+    border: none;
+    padding: 0.2rem 1rem;
+    color: @jvandemo-text-color-on-dark-blue;
+    &::-webkit-input-placeholder {
+      color: @jvandemo-text-color-on-dark-blue;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @jvandemo-text-color-on-dark-blue;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: @jvandemo-text-color-on-dark-blue;
+    }
+    &:-ms-input-placeholder {
+      color: @jvandemo-text-color-on-dark-blue;
+    }
+    outline: none;
+  }
+  button{
+    background: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+  }
+}
