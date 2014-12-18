@@ -1,7 +1,7 @@
 @import "../../../_build/_variables";
 
 article{
-  padding-bottom: 0;
+  padding-bottom: 3rem;
   h2{
     font-size: @font-size-h3;
   }
@@ -22,8 +22,9 @@ article{
 footer.article-footer{
   background: @jvandemo-dark-blue;
   color: @jvandemo-text-color-on-dark-blue;
+  padding: 3rem 0 0 0;
   hr{
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   section.article-subscribe{
     h1{
@@ -33,9 +34,20 @@ footer.article-footer{
       text-transform: uppercase;
       letter-spacing: 1px;
     }
+    .comment{
+      font-size: 0.8rem;
+      padding-left: 1rem;
+      margin-top: 0.3rem;
+      color: fadeout(@jvandemo-text-color-on-dark-blue, 40);
+    }
     form{
-      @media (min-width: @screen-sm-min) {
-        margin-top: 3.4rem;
+      input{
+        width: 100%;
+      }
+      button{
+        @media (max-width: @screen-xs-max) {
+          margin-top: 1rem;
+        }
       }
     }
   }
