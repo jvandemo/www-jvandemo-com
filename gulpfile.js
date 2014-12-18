@@ -131,6 +131,14 @@ var ngxFiles = {
     },
     {
       src: [
+        path.join(bowerDirectory, '/angular-animate/angular-animate.js'),
+        path.join(bowerDirectory, '/angular-animate/angular-animate.min.js'),
+        path.join(bowerDirectory, '/angular-animate/angular-animate.min.js.map')
+      ],
+      dest: path.join(outputDirectory, '/vendor/angular-animate/')
+    },
+    {
+      src: [
         path.join(bowerDirectory, '/ui-router/release/angular-ui-router.js'),
         path.join(bowerDirectory, '/ui-router/release/angular-ui-router.min.js')
       ],
