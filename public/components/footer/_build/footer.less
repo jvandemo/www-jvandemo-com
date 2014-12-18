@@ -1,5 +1,33 @@
 @import "../../../_build/_variables";
 
+footer.subscribe-footer {
+  background: @jvandemo-dark-blue;
+  color: @jvandemo-text-color-on-dark-blue;
+  padding: 3rem 0 0 0;
+  hr {
+    margin-top: 5rem;
+  }
+  section.article-subscribe {
+    h1 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    form {
+      input {
+        width: 100%;
+      }
+      button {
+        @media (max-width: @screen-xs-max) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
 footer.site-footer{
   background: @jvandemo-dark-blue;
   padding: 2rem 0;
