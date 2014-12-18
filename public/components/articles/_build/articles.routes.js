@@ -5,7 +5,11 @@
 
       $stateProvider
         .state('articles', {
-          url: '/articles',
+          abstract: true,
+          url: '/articles'
+        })
+        .state('articles.index', {
+          url: '/',
           views: {
             'content@': {
               templateUrl: '/components/articles/index.html'
