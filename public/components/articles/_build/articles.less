@@ -1,6 +1,7 @@
 @import "../../../_build/_variables";
 
-section.article{
+article{
+  padding-bottom: 0;
   h2{
     font-size: @font-size-h3;
   }
@@ -13,6 +14,29 @@ section.article{
   ul{
     list-style-type: circle;
     li{
+    }
+  }
+}
+
+
+footer.article-footer{
+  background: @jvandemo-dark-blue;
+  color: @jvandemo-text-color-on-dark-blue;
+  hr{
+    margin-top: 2rem;
+  }
+  section.article-subscribe{
+    h1{
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    form{
+      @media (min-width: @screen-sm-min) {
+        margin-top: 3.4rem;
+      }
     }
   }
 }

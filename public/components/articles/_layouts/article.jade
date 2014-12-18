@@ -1,0 +1,20 @@
+article
+    .container
+        .row
+            .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2
+                != yield
+
+footer.article-footer
+    .container
+        .row
+            .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2
+                section.article-subscribe
+                    .row
+                        .col-sm-6
+                            h1 Never miss an article again
+                            p Have all awesomeness delivered to your inbox:
+                        .col-sm-6
+                            form.form-dark
+                                input(type="email", placeholder="Your email address")
+                                button(type="submit") Subscribe
+                hr
