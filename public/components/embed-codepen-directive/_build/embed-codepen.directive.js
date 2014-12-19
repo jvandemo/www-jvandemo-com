@@ -4,7 +4,7 @@
    * Directive to render codepen embeds.
    *
    * It is written in such a way that the original codepen
-   * embed code can be used.
+   * embed code can be used and state changes are supported.
    *
    * See: http://blog.codepen.io/documentation/features/embedded-pens/
    *
