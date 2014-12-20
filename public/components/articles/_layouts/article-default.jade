@@ -1,0 +1,19 @@
+if article
+
+    section.article-header
+        .container
+            .row
+                .col-xs-10.col-xs-offset-1.col-md-6.col-md-offset-3
+                    h1 #{article.title}
+                    ul.article-header-meta.list-inline-responsive
+                        li.date
+                            i.fa.fa-fw.fa-clock-o
+                            | {{ '#{article.date}' | date }}
+                        li.read-time
+                            i.fa.fa-fw.fa-bookmark
+                            | #{article.minutes} min read
+    section.article-body
+        .container
+            .row
+                .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2
+                    != yield

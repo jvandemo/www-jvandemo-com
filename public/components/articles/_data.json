@@ -12,5 +12,12 @@
     "date": "2014-11-17",
     "minutes": 9,
     "tags": ["angular", "directives"]
+  },
+  "jade-test": {
+    "title": "Jade test",
+    "intro": "Testing how Jade works...",
+    "date": "2014-11-17",
+    "minutes": 9,
+    "tags": ["angular", "jade"]
   }
 }
