@@ -17,7 +17,7 @@
           }
         })
         .state('articles.article', {
-          url: '/:slug',
+          url: '/:slug/index.html',
           resolve: {
 
           },
