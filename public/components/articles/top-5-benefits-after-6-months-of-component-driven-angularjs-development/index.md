@@ -10,7 +10,7 @@ On the other hand the new recommendations made a lot of sense and actually tackl
 
 Projects often ended up with a familiar set of directories like:
 
-```
+```bash
 my-traditional-app/
 ├── public
 │   ├── css
@@ -92,7 +92,7 @@ So a structure like:
 
 becomes a structure like:
 
-```sh
+```bash
 └── components
     └── login
         ├── auth.service.js
@@ -117,7 +117,7 @@ Quite contrary: it almost felt to me as if the login component directory had now
 
 But I stubbornly kept going and restructured one of my existing web applications and the `components` directory finally looked like this:
 
-```sh
+```bash
 └── components
     ├── data
     ├── header    

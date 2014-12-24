@@ -84,7 +84,7 @@ which can be summarized as:
 
 and visualized as:
 
-{<3>}![No transclusion](/components/articles/the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives-part-2-transclusion/img/no-transclusion-1.svg)
+![No transclusion](/components/articles/the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives-part-2-transclusion/img/no-transclusion-1.svg)
 
 To try it out for yourself, just open [this plnkr](http://plnkr.co/edit/5rbeFfKO7QUM2PGkK3Qy?p=preview) and take a look at the console.
 
