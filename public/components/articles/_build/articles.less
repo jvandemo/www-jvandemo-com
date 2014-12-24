@@ -1,6 +1,6 @@
 @import "../../../_build/_variables";
 
-article {
+section.article {
   padding-bottom: 3rem;
   h2 {
     font-size: @font-size-h3;
@@ -18,6 +18,17 @@ article {
   }
   img{
     width: 100%;
+  }
+  @media (max-width: @screen-sm-max) {
+    h1{
+      font-size: @font-size-h2;
+    }
+    h2{
+      font-size: (0.7 * @font-size-h3);
+    }
+    h3{
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -43,7 +54,6 @@ section.article-header{
 }
 
 section.article-body{
-
 }
 
 section.articles-index {
@@ -93,5 +103,21 @@ section.articles-index {
       margin-right: 0.1rem;
     }
   }
+  .article-intro{
+    margin: 1.5rem 0 1.3rem 0;
+    span.article-read-more{
+      margin-left: 0.5rem;
+      i {
+        font-size: 0.75rem;
+        margin-right: 0.1rem;
+      }
+    }
+  }
 }
 
+section.article.header-rocks{
+  section.article-header{
+    background: @jvandemo-dark-blue url(/components/articles/img/header/rocks.jpg) no-repeat bottom center;
+    background-size: cover;
+  }
+}
