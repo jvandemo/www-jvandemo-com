@@ -4,20 +4,31 @@
     "intro": "In February 2014 Google announced that they had published some new \"Best Practice Recommendations for Angular App Structure\". For years I had been structuring AngularJS code in directories called controllers, services, directives, filters, etc as outlined by …",
     "date": "2014-11-22",
     "minutes": 8,
-    "tags": ["angular", "components", "code architecture"]
+    "tags": ["angular", "components", "code architecture"],
+    "cssClass": "header-rocks"
   },
   "the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives-part-2-transclusion": {
     "title": "The nitty-gritty of compile and link functions inside AngularJS directives part 2: transclusion",
     "intro": "In this article we investigate the influence of transclusion on the <code>compile</code>, <code>pre-link</code> and <code>post-link</code> functions inside an AngularJS directive.",
     "date": "2014-11-17",
     "minutes": 9,
-    "tags": ["angular", "directives"]
+    "tags": ["angular", "directives"],
+    "cssClass": ""
   },
   "jade-test": {
     "title": "Jade test",
-    "intro": "Testing how Jade works...",
+    "intro": "",
     "date": "2014-11-17",
     "minutes": 9,
-    "tags": ["angular", "jade"]
+    "tags": ["angular", "jade"],
+    "cssClass": ""
+  },
+  "how-to-fix-home-and-end-keys-on-mac-os-x": {
+    "title": "How to fix home and end keys on Mac OS X",
+    "intro": "Learn how to make the <code>home</code> and <code>end</code> keys work on a full size mac keyboard.",
+    "date": "2014-02-05",
+    "minutes": 1,
+    "tags": ["mac", "osx"],
+    "cssClass": ""
   }
 }
