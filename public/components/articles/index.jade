@@ -11,7 +11,13 @@ mixin card(article, slug)
                 li.read-time
                     i.fa.fa-fw.fa-bookmark
                     | #{article.minutes} min read
-            p !{article.intro}
+            if article.intro
+                div.article-intro
+                    !{article.intro}
+
+                    span.article-read-more
+                        i.fa.fa-fw.fa-angle-right
+                        a(ui-sref="articles.article({slug: '#{slug}'})") read more
             ul.article-thumb-tags.list-inline-responsive
                 each tag in article.tags
                     li
