@@ -5,7 +5,7 @@
 
       $stateProvider
         .state('hire-me', {
-          url: 'hire-me',
+          url: '/hire-me',
           views: {
             'content@': {
               templateUrl: '/components/hire-me/index.html'
