@@ -36,7 +36,9 @@ header.site-header{
         }
       }
       &:first-child{
-        margin-left: 0;
+        @media (min-width: @screen-sm-min) {
+          margin-left: 0;
+        }
       }
     }
   }
