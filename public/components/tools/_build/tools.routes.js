@@ -5,7 +5,7 @@
 
       $stateProvider
         .state('tools', {
-          url: 'tools',
+          url: '/tools',
           views: {
             'content@': {
               templateUrl: '/components/tools/index.html'
