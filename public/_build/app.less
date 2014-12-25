@@ -41,6 +41,17 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
+h2 {
+  font-size: @font-size-h3;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 a{
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -185,3 +196,42 @@ section.embed-codepen{
   }
 }
 
+//
+// General pages
+// --------------------------------------------------
+
+section.page-header{
+  background: @jvandemo-dark-blue;
+  margin: -128px 0 4rem 0;
+  padding: 128px 0 128px 0;
+  h1{
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+    color: #9199AA;
+    font-weight: 300;
+    line-height: 1.5rem;
+    i {
+      font-size: 1rem;
+      margin-right: 0.1rem;
+    }
+  }
+  ul.page-header-meta {
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+    color: #9199AA;
+    i {
+      font-size: 0.75rem;
+      margin-right: 0.1rem;
+    }
+  }
+}
+
+section.page-body{
+  padding-bottom: 3rem;
+}
