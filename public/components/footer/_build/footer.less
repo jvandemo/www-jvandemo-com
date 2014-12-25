@@ -31,12 +31,18 @@ footer.subscribe-footer {
 footer.site-footer{
   background: @jvandemo-dark-blue;
   padding: 2rem 0;
+  @media (max-width: @screen-xs-max) {
+    text-align: center;
+  }
   ul{
     margin: 0;
     padding: 0;
+    @media (max-width: @screen-xs-max) {
+      display: inline-block;
+    }
     li{
       display: inline-block;
-      margin-left: 2rem;
+      margin: 0 1rem;
       a{
         text-transform: uppercase;
         border-bottom: none;
@@ -47,6 +53,9 @@ footer.site-footer{
         &:hover{
           color: #eff1f3;
         }
+        i{
+          font-size: 0.75rem;
+        }
       }
       &.active{
         a{
@@ -54,7 +63,9 @@ footer.site-footer{
         }
       }
       &:first-child{
-        margin-left: 0;
+        @media (min-width: @screen-sm-min) {
+          margin-left: 0;
+        }
       }
     }
   }
