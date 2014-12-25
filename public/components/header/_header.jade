@@ -1,5 +1,16 @@
 header.site-header
     .container
-        ul
-            li(ng-class="{active: $state.includes('articles')}")
-                a(ui-sref="articles.index") Articles
+        .row
+            .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2
+                ul
+                    li(ng-class="{active: $state.includes('articles')}")
+                        a(ui-sref="articles.index") Articles
+
+                    li(ng-class="{active: $state.includes('about')}")
+                        a(ui-sref="about") About
+
+                    li(ng-class="{active: $state.includes('tools')}")
+                        a(ui-sref="tools") Tools
+
+                    li(ng-class="{active: $state.includes('hire-me')}")
+                        a(ui-sref="hire-me") Hire me
