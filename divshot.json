@@ -6,12 +6,11 @@
   "routes": {
     "about": "index.html",
     "articles": "index.html",
-    "articles/": "index.html",
-    "articles/**/*.html": "index.html",
+    "article/*": "index.html",
     "hire-me": "index.html"
   },
   "redirects": {
-    "top-5-benefits-after-6-months-of-component-driven-angularjs-development": "articles/top-5-benefits-after-6-months-of-component-driven-angularjs-development/index.html"
+    "top-5-benefits-after-6-months-of-component-driven-angularjs-development": "article/top-5-benefits-after-6-months-of-component-driven-angularjs-development/index.html"
   },
   "prerender": true
 }
