@@ -2,9 +2,13 @@
   "name": "www-jvandemo-com",
   "root": "dist",
   "clean_urls": false,
-  "error_page": "index.html",
+  "error_page": "404.html",
   "routes": {
-    "articles/**/*.html": "index.html"
+    "about": "index.html",
+    "articles": "index.html",
+    "articles/": "index.html",
+    "articles/**/*.html": "index.html",
+    "hire-me": "index.html"
   },
   "redirects": {
     "top-5-benefits-after-6-months-of-component-driven-angularjs-development": "articles/top-5-benefits-after-6-months-of-component-driven-angularjs-development/index.html"
