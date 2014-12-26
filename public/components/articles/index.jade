@@ -2,7 +2,7 @@ mixin card(article, slug)
     if article
         section.article-thumb
             h1
-                a(ui-sref="articles.article({slug: '#{slug}'})")
+                a(ui-sref="article({slug: '#{slug}'})")
                     | #{article.title}
             ul.article-thumb-meta.list-inline-responsive
                 li.date
@@ -17,7 +17,7 @@ mixin card(article, slug)
 
                     span.article-read-more
                         i.fa.fa-fw.fa-angle-right
-                        a(ui-sref="articles.article({slug: '#{slug}'})") read more
+                        a(ui-sref="article({slug: '#{slug}'})") read more
             ul.article-thumb-tags.list-inline-responsive
                 each tag in article.tags
                     li

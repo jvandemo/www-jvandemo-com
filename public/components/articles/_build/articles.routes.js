@@ -5,19 +5,15 @@
 
       $stateProvider
         .state('articles', {
-          abstract: true,
-          url: '/articles'
-        })
-        .state('articles.index', {
-          url: '/',
+          url: '/articles',
           views: {
             'content@': {
               templateUrl: '/components/articles/index.html'
             }
           }
         })
-        .state('articles.article', {
-          url: '/:slug/index.html',
+        .state('article', {
+          url: '/article/:slug',
           resolve: {
 
           },
