@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title= siteTitle
+        base(href="/")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="google-site-verification", content="EZg3DIjTLRs3HYxT8Y6ZyWqI8LdkiFcolBZAd5tb4dc")
+        meta(name="fragment", content="!")
+        if environment == "production"
+            link(rel="stylesheet", href="/build/css/app.min.css")
+            link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        else
+            link(rel="stylesheet", href="/build/css/app.css")
+            link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        body
+
+            .container
+                .row
+                    .col-xs-6.col-xs-offset-3
+                        h1 404
+                        p This is not the page you are looking for.
+                        ul.list-inline-responsive
+                            li
+                                a(href="/")
+                                    i.fa.fa-fw.fa-home
+                                    | Home
+
+            div.
+                <script src="//use.typekit.net/ill7rmq.js"></script>
+                <script>try{Typekit.load();}catch(e){}</script>
