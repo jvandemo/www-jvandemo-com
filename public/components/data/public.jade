@@ -1,0 +1,13 @@
+| (function (root, factory) {
+|   if (typeof define === 'function' && define.amd) {
+|     define([''], function () {
+|       return (root.__public = factory());
+|     });
+|   } else if (typeof exports === 'object') {
+|     module.exports = factory();
+|   } else {
+|     root.__public = factory();
+|   }
+| }(this, function () {
+|   return !{JSON.stringify(public)};
+| }));
