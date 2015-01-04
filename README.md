@@ -25,8 +25,7 @@ $ harp server
 
 And navigate to `http://localhost:9000` in your browser to preview your work:
 
-![Homepage](http://i.imgur.com/dORKysf.png)
-
+![www-jvandemo-com](https://cloud.githubusercontent.com/assets/1859381/5604956/0fefb56c-93e2-11e4-8f24-35f06dac9cb2.png)
 
 ## Testing
 
