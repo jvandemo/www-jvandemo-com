@@ -1,15 +1,17 @@
-# Your AngularJS application
+# Personal website
 
-## How to develop
+This repository contains all source files for http://www.jvandemo.com.
 
-First install all dependencies
+## Local development
+
+First install all dependencies:
 
 ```sh
 $ npm install
 $ bower install
 ```
 
-Then run gulp to build and watch files during development
+Then run gulp to build and watch files during development:
 
 ```sh
 $ gulp
@@ -23,43 +25,7 @@ $ harp server
 
 And navigate to `http://localhost:9000` in your browser to preview your work:
 
-![Homepage](http://i.imgur.com/dORKysf.png)
-
-## File structure
-
-All action happens in the `public` directory, so let's have a look at its structure:
-
-```sh
-public
-├── 200.jade
-├── _build                          # main _build directory for global app stuff
-│   ├── app.config.module.js        # Example 'app.config' module
-│   ├── app.config.module.spec.js   # Put your unit tests here too, Karma will find them for you
-│   ├── app.config.router.js        # Configure the router
-│   ├── app.less                    # Global app styles that you want Gulp to add to /public/build/css/app.css
-│   ├── app.module.js               # Main 'app' module
-│   └── app.module.spec.js          # Sample unit tests for main 'app' module
-├── build                           # Build directory where files built by Gulp are saved
-│   ├── css
-│   │   ├── app.css                 # All .less files from _build directories are concatenated here
-│   │   └── app.min.css             # Minified version for production
-│   └── js
-│       ├── app.js                  # All .js files from _build directories are concatenated here
-│       └── app.min.js              # Minified version for production
-└── components
-    ├── footer                      # Example footer component
-    │   ├── _build                  # Component _build directory with files that you want Gulp to build
-    │   │   └── footer.less         # Styles that you want to add to /public/build/css/app.css
-    │   └── footer.jade             # Jade file will be compiled to HTML automatically
-    ├── header                      # Example header component
-    │   ├── _build                  # Component _build directory with files that you want Gulp to build
-    │   │   └── header.less         # Styles that you want to add to /public/build/css/app.css
-    │   └── header.jade             # Jade file will be compiled to HTML automatically
-    └── homepage                    # Example homepage component
-        ├── _build                  # Component _build directory with files that you want Gulp to build
-        │   └── homepage.routes.js  # JavaScript code that you want to add to /public/build/js/app.js
-        └── homepage.jade           # Jade file will be compiled to HTML automatically
-```
+![www-jvandemo-com](https://cloud.githubusercontent.com/assets/1859381/5604956/0fefb56c-93e2-11e4-8f24-35f06dac9cb2.png)
 
 ## Testing
 
@@ -71,10 +37,46 @@ $ gulp test
 
 This will run all tests in `public/**/_build/**/*.spec.js`.
 
-## Documentation
+## Deployment
 
-To generate documentation:
+First compile a static version:
 
 ```sh
-$ gulp docs
+$ harp compile . dist
 ```
+
+Then deploy to divshot:
+
+```sh
+$ divshot deploy
+```
+
+The site can now be previewed at: http://development.www-jvandemo-com.divshot.io.
+
+To push to `staging` or `production`:
+
+```sh
+$ divshot promote development production
+```
+
+The production environment is the one that is displayed when visiting http://www.jvandemo.com.
+
+## Change log
+
+### v0.3.0
+
+- Add divshot configuration
+- Add dynamic meta support
+- Add public data component
+
+### v0.2.0
+
+- Add global styles
+- Add articles layout
+- Add about page
+- Add hire-me page
+- Add initial dummy content
+
+### v0.1.0
+
+- Initial version generated using AngularJS Express
