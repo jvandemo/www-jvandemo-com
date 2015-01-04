@@ -22,3 +22,5 @@ if article
         script.
             Prism.highlightAll();
             document.title = '#{article.title}';
+
+        update-meta(name="description", content="#{article.title}")
